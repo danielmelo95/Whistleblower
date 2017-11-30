@@ -41,4 +41,68 @@
       <riesenie>Alžbety</riesenie>
     </slovo>       
 	</krizovka>
+    <krizovka>
+        <tajnicka>ahoj</tajnicka>
+        <slovo>
+            <napoveda>napis ahoj</napoveda>
+            <riesenie>ahoj</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>napis ahoj</napoveda>
+            <riesenie>ahoj</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>napis ahoj</napoveda>
+            <riesenie>ahoj</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>napis ahoj</napoveda>
+            <riesenie>ahoj</riesenie>
+        </slovo>
+
+    </krizovka>
+    <krizovka>
+        <tajnicka>hello</tajnicka>
+        <slovo>
+            <napoveda>napis hello</napoveda>
+            <riesenie>hello</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>napis hello</napoveda>
+            <riesenie>hello</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Znapis hello</napoveda>
+            <riesenie>hello</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>napis hello</napoveda>
+            <riesenie>hello</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>napis hello</napoveda>
+            <riesenie>hello</riesenie>
+        </slovo>
+
+    </krizovka>
+    <krizovka>
+        <tajnicka>holly</tajnicka>
+        <slovo>
+            <napoveda>napis holly</napoveda>
+            <riesenie>holly</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>napis holly</napoveda>
+            <riesenie>holly</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>napis holly</napoveda>
+            <riesenie>holly</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>napis holly</napoveda>
+            <riesenie>holly</riesenie>
+        </slovo>
+
+    </krizovka>
 </krizovky>

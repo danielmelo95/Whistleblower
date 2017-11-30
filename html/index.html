@@ -4,46 +4,30 @@
     <meta charset="UTF-8">
     <script src="../js/xml_loader.js"></script>
     <script src="../js/generic_script.js"></script>
+    <script src="../js/localStorage.js"></script>
+    <!--
+    <script src="../js/jquery/jquery-ui.min.js"></script>
+    <script src="../js/jquery/external/jquery/jquery.js"></script>
+    <script src="../js/jquery.ui.touch-punch.min.js"></script>
+    -->
     <link rel="stylesheet" type="text/css" href="../css/final.css">
     <title>Crossword</title>
+    <link href="../imgs/favicon.ico" rel="icon" type="image/x-icon" />
 </head>
-<body background="../imgs/background.png"><!--onload = "xml_parser()">-->
+<body background="../imgs/background.png" id="body" onload="showDate()"><!--onload = "xml_parser()">-->
+<div id="date"></div>
+<div id="points_div"> Points: </div>
+<button class="button" type="button" onclick="validate_crossword()" style="vertical-align:middle"><span>Check if you did it right!</span></button>
+<button class="resetButton" type="button" onclick="resetGame()" style="vertical-align:middle"><span>Reset</span></button>
+<button class="backButton" type="button" onclick="goBackOneStep()" style="vertical-align:middle"><span>Go back one step</span></button>
 <div id="crossword"></div>
 <br>
 <br>
-<br>
-<br>
-<br>
 <div id="letters_div">
-    <div id="letterA" class="letters_cls" draggable="true" ondragstart="drag(event)">A</div>
-    <div id="letterB" class="letters_cls" draggable="true" ondragstart="drag(event)">B</div>
-    <div id="letterC" class="letters_cls" draggable="true" ondragstart="drag(event)">C</div>
-    <div id="letterD" class="letters_cls" draggable="true" ondragstart="drag(event)">D</div>
-    <div id="letterE" class="letters_cls" draggable="true" ondragstart="drag(event)">E</div>
-    <div id="letterF" class="letters_cls" draggable="true" ondragstart="drag(event)">F</div>
-    <div id="letterG" class="letters_cls" draggable="true" ondragstart="drag(event)">G</div>
-    <div id="letterH" class="letters_cls" draggable="true" ondragstart="drag(event)">H</div>
-    <div id="letterI" class="letters_cls" draggable="true" ondragstart="drag(event)">I</div>
-    <div id="letterJ" class="letters_cls" draggable="true" ondragstart="drag(event)">J</div>
-    <div id="letterK" class="letters_cls" draggable="true" ondragstart="drag(event)">K</div>
-    <div id="letterL" class="letters_cls" draggable="true" ondragstart="drag(event)">L</div>
-    <div id="letterM" class="letters_cls" draggable="true" ondragstart="drag(event)">M</div>
-    <div id="letterN" class="letters_cls" draggable="true" ondragstart="drag(event)">N</div>
-    <div id="letterO" class="letters_cls" draggable="true" ondragstart="drag(event)">O</div>
-    <div id="letterP" class="letters_cls" draggable="true" ondragstart="drag(event)">P</div>
-    <div id="letterQ" class="letters_cls" draggable="true" ondragstart="drag(event)">Q</div>
-    <div id="letterR" class="letters_cls" draggable="true" ondragstart="drag(event)">R</div>
-    <div id="letterS" class="letters_cls" draggable="true" ondragstart="drag(event)">S</div>
-    <div id="letterT" class="letters_cls" draggable="true" ondragstart="drag(event)">T</div>
-    <div id="letterU" class="letters_cls" draggable="true" ondragstart="drag(event)">U</div>
-    <div id="letterV" class="letters_cls" draggable="true" ondragstart="drag(event)">V</div>
-    <div id="letterX" class="letters_cls" draggable="true" ondragstart="drag(event)">X</div>
-    <div id="letterY" class="letters_cls" draggable="true" ondragstart="drag(event)">Y</div>
-    <div id="letterZ" class="letters_cls" draggable="true" ondragstart="drag(event)">Z</div>
 </div>
 <br>
 <br>
 <br>
-<button class="button" type="button" onclick="validate_crossword()"style="vertical-align:middle"><span>Check if you did it right!</span></button>
+
 </body>
 </html>
