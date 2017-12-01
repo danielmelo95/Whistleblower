@@ -64,6 +64,7 @@ function drop(ev) {
         //console.log(document.getElementById(data));
 
     }
+    changePoints();
     saveToLocalStorage(document.getElementById("body"));
 
 }
@@ -217,4 +218,9 @@ function enableTouchmovement(){
         }
     });
 
+}
+
+function changePoints() {
+    points++;
+    document.getElementById("points_div").innerHTML = "Points: "+ points;
 }

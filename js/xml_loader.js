@@ -30,6 +30,7 @@ function myFunction(control) {
         }
     }
     if (control == 1) {
+        points=0;
         localStorage.clear();
         console.log("AAABBB");
         states = [];
