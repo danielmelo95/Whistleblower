@@ -213,7 +213,8 @@ function showDate(){
     m = n.getMonth() + 1;
     d = n.getDate();
     //console.log(m + "/" + d + "/" + y);
-    document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+    document.getElementById("date").innerHTML = d + "/" + m + "/" + y+'<br>' +
+        'Currently playing level :'+(current_level+1)+'/10';
     //enableTouchmovement();
 
 

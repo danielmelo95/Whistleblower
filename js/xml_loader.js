@@ -4,6 +4,7 @@ var current_level=0;
 var arrayOfLetters = [];
 var points = 0;
 var cookieVar="";
+
 var xmlDoc;
 var crosswordSolution;
 var xhttp = new XMLHttpRequest();
@@ -32,6 +33,7 @@ function myFunction(control) {
         }
     }
     if (control == 1) {
+        showDate();
         showHighScoreTable();
         points=0;
         //localStorage.clear();

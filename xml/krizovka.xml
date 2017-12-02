@@ -2,83 +2,277 @@
 <!-- Autor suboru: Katarina Zakova -->
 <!-- Posledna aktualizacia: oktober 2017 -->
 <krizovky>
+    <krizovka>
+        <tajnicka>syntax</tajnicka>
+        <slovo>
+            <napoveda>Pevný ... – programy, dokumenty a iné súbory nájdeme vždy po zapnutí počítača na známom mieste. Údaje si pamätá na magneticky citlivých platniach, po ktorých sa pohybuje hlavička a sníma zmeny magnetizmu. Je citlivý na nárazy a znečistenie.</napoveda>
+            <riesenie>disk</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Podobné ako DVD, ale väčšej kapacity(hint: mmodrá)</napoveda>
+            <riesenie>blueray</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>USB je ..., ktoré sa pripája na počítač cez USB port. Slúži na prenos a uchovávanie informácií.</napoveda>
+            <riesenie>zariadenie</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Problém je ..., v ktorom existuje rozdiel medzi tým, čo v danom momente poznáme (vstupné údaje) a tým čo potrebujeme zistiť (výstupné údaje)</napoveda>
+            <riesenie>stav</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Program je ... napísaný v programovacom jazyku</napoveda>
+            <riesenie>algoritmus</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Informácia uložená v počítači v binárnom kóde. Môžu byť rôzneho typu: ...( názov, autor), číselné(rok vydania, dĺžka a počet skladieb), logické(obľúbené alebo neobľúbené), multimediálne( fotografia, úryvok skladby, hlasový záznam).</napoveda>
+            <riesenie>textové</riesenie>
+        </slovo>
+    </krizovka>
 	<krizovka>
-		<tajnicka>prá</tajnicka>
+		<tajnicka>prázdniny</tajnicka>
 		<slovo>
       <napoveda>Robí sa po každom diktáte, písomne si v nej opravíte chyby.</napoveda>
-      <riesenie>opr</riesenie>
+      <riesenie>oprava</riesenie>
     </slovo>
 		<slovo>
       <napoveda>V slovenčine platí zákon o rytmickom...</napoveda>
-      <riesenie>krá</riesenie>
+      <riesenie>krátení</riesenie>
     </slovo>
 		<slovo>
       <napoveda>Známa kniha, ktorú napísal Lewis Carrol - Alica v krajine...</napoveda>
-      <riesenie>zá</riesenie>
+      <riesenie>zázrakov</riesenie>
     </slovo>
+		<slovo>
+      <napoveda>Rozprávanie sa člení na tieto časti: úvod, jadro a ...</napoveda>
+      <riesenie>záver</riesenie>
+    </slovo>
+		<slovo>
+      <napoveda>Kone ju majú na kopyte...</napoveda>
+      <riesenie>podkovu</riesenie>
+    </slovo>
+		<slovo>
+      <napoveda>Školská pomôcka, ukladajú sa do nej písacie potreby.</napoveda>
+      <riesenie>peračník</riesenie>
+    </slovo>
+		<slovo>
+      <napoveda>Každý žiak si ju nosí do školy, aby nebol hladný.</napoveda>
+      <riesenie>desiata</riesenie>
+    </slovo>
+		<slovo>
+      <napoveda>Nachádzajú sa v nich dôležité informácie, novinky.</napoveda>
+      <riesenie>noviny</riesenie>
+    </slovo>
+		<slovo>
+      <napoveda>V centre Košíc sa nachádza kostol s menom Dóm sv. ...</napoveda>
+      <riesenie>Alžbety</riesenie>
+    </slovo>       
 	</krizovka>
     <krizovka>
-        <tajnicka>ahoj</tajnicka>
+        <tajnicka>problém</tajnicka>
         <slovo>
-            <napoveda>napis ahoj</napoveda>
-            <riesenie>ahoj</riesenie>
+            <napoveda>Typ disku, ktorý má magneticky citlivé platne</napoveda>
+            <riesenie>pevný</riesenie>
         </slovo>
         <slovo>
-            <napoveda>napis ahoj</napoveda>
-            <riesenie>ahoj</riesenie>
+            <napoveda>Kódovanie farieb, ktoré vznikne zložením troch lúčov, červenej, zelenej a modrej farby (red, green, blue)</napoveda>
+            <riesenie>rgb</riesenie>
         </slovo>
         <slovo>
-            <napoveda>napis ahoj</napoveda>
-            <riesenie>ahoj</riesenie>
+            <napoveda>Postup určený pre nemysliace zariadenie, elementárny pojem informatiky postup, ktorého realizáciou získame zo zadaných vstupných údajov po konečnom počte činnosti v konečnom čase správne výsledky</napoveda>
+            <riesenie>algoritmus</riesenie>
         </slovo>
         <slovo>
-            <napoveda>napis ahoj</napoveda>
-            <riesenie>ahoj</riesenie>
+            <napoveda>Klasické výstupné zariadenie</napoveda>
+            <riesenie>Obrazovka</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Príkaz ktorý, vypíše hodnotu a nastaví kurzor na nový riadok</napoveda>
+            <riesenie>writeln</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Diagramy zaznamenávajúce vývoj algoritmu</napoveda>
+            <riesenie>vývojové</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Inak povedané softvér</napoveda>
+            <riesenie>program</riesenie>
+        </slovo>
+    </krizovka>
+    <krizovka>
+        <tajnicka>vektor</tajnicka>
+        <slovo>
+            <napoveda>Typ grafiky, ktorá obrázok reprezentuje ako mozaiku, ktorá sa skladá z malých farebných štvorcov</napoveda>
+            <riesenie>rastrová</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Súbor obrázkov ktoré sa rýchlo vymieňajú pred naším zrakom</napoveda>
+            <riesenie>video</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>v minulosti sa uchovával na gramofónových platniach</napoveda>
+            <riesenie>zvuk</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Veľká plocha postupnosti písmen a slov</napoveda>
+            <riesenie>text</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Program ktorý prekladá programy z jedného(zdrojový) programovacieho jazyka do druhého (cieľový)</napoveda>
+            <riesenie>kompilátor</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>... vstupu- umožňuje zadať procesoru konkrétnu hodnotu údajov, tieto sa uložia do premenných</napoveda>
+            <riesenie>príkaz</riesenie>
         </slovo>
 
     </krizovka>
     <krizovka>
-        <tajnicka>hello</tajnicka>
+        <tajnicka>bajt</tajnicka>
         <slovo>
-            <napoveda>napis hello</napoveda>
-            <riesenie>hello</riesenie>
+            <napoveda>Priradenie ... kódov znakom sa nazýva kódová tabuľka. Pretože vieme kódovať znaky, ľahko zakódujeme aj slová. Zaznamenali sme tri pokusy o jednotné kódovanie.Najrozšírenejšie sa nazýva ASCII. Jeho nevýhodou je, že každý znak sa kóduje iba siedmimi bitmi.</napoveda>
+            <riesenie>binárnych</riesenie>
         </slovo>
         <slovo>
-            <napoveda>napis hello</napoveda>
-            <riesenie>hello</riesenie>
+            <napoveda>Typ zvuku, ktorý nadobúda hodnoty z intervalu 0 až 1</napoveda>
+            <riesenie>analógový</riesenie>
         </slovo>
         <slovo>
-            <napoveda>Znapis hello</napoveda>
-            <riesenie>hello</riesenie>
+            <napoveda>MP3 ..., čiže zhusťuje súbory typu WAV na jednu jedenástinu. Niektoré zložky hudby vynechá. Dôležité na prenos hudby cez internet, kde je veľmi dôležitá veľkosť súboru.</napoveda>
+            <riesenie>kompresuje</riesenie>
         </slovo>
         <slovo>
-            <napoveda>napis hello</napoveda>
-            <riesenie>hello</riesenie>
+            <napoveda>Kompaktný disk –CD používa na zápis údajov ... záznam. Mechanika osvetľuje jednotlivé mikroskopické plôšky laserovým lúčom a podľa intenzity odrazeného svetla potom rozlišuje hodnoty 0 a 1. V súčasnosti sa dajú aj viacnásobne prepisovať.</napoveda>
+            <riesenie>optický</riesenie>
+        </slovo>
+    </krizovka>
+    <krizovka>
+        <tajnicka>java</tajnicka>
+        <slovo>
+            <napoveda>... (JPEG) je určený na prenos rastrových obrázkov, ktoré obsahujú veľa farebných prechodov, napríklad fotografie. Obrázok sa komprimuje tzv. stratovou kompresiou . pri porovnaní originálneho a skomprimovaného obrázka človek nevníma rozdiely medzi jemnými farebnými prechodmi. Súbor zaberie na disku asi desatinu oproti súboru BMP. Nevýhodou je, že dobre sa skomprimujú iba tie obrázky, ktoré neobsahujú hrany ( chyby okolo hrán).</napoveda>
+            <riesenie>jpg</riesenie>
         </slovo>
         <slovo>
-            <napoveda>napis hello</napoveda>
-            <riesenie>hello</riesenie>
+            <napoveda>CMYK na farebnej tlačiarni vznikajú farby zmiešaním troch farieb : ..., purpurovej a žltej ( cyan, Magenta, Yellow). Používa sa aj čisto čierna náplň, aby sa nemíňali drahé farebné náplne.</napoveda>
+            <riesenie>azúrovej</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Vektorový obraz je poskladaný ..., z grafických objektov. Obrázok teda môže byť zložený z úsečiek, kružníc, rôznych kriviek,.. o každom objekte si editor pamätá informácie, ktoré objekt dostatočne presne popisujú.</napoveda>
+            <riesenie>vektorov</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Písmo pre nevidiacich.</napoveda>
+            <riesenie>braillovo</riesenie>
+        </slovo>
+    </krizovka>
+    <krizovka>
+        <tajnicka>údaj</tajnicka>
+        <slovo>
+            <napoveda>Informácia uložená v počítači v binárnom kóde. Môžu byť rôzneho typu: textové( názov, autor), číselné(rok vydania, dĺžka a počet skladieb), logické(obľúbené alebo neobľúbené), multimediálne( fotografia, úryvok skladby, hlasový záznam).</napoveda>
+            <riesenie>údaj</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Bajt je skupina 8 bitov a je to základná ... veľkosti súborov pamäti, diskov a podobne.</napoveda>
+            <riesenie>jednotka</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Rastrové editory : Skicár, ... Photoshop, Corel PhotoPaint, MetaCreations Painter, Pain Shop Pro</napoveda>
+            <riesenie>adobe</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Objektovo orientovaný programovací jazyk od Oracle</napoveda>
+            <riesenie>java</riesenie>
+        </slovo>
+    </krizovka>
+    <krizovka>
+        <tajnicka>formát</tajnicka>
+        <slovo>
+            <napoveda>Film je súbor obrázkov ktoré sa rýchlo vymieňajú pred naším zrakom. Rýchlosť prehrávania je koľko obrázkov sa prehrá za sekundu. ... .AVI, .MOV, .MPG</napoveda>
+            <riesenie>formáty</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Prvé počítače pacovali iba s bielou a čiernou .... Na kódovanie každého bodu stačí jediný bit s hodnotami 0,1. pre 16 farieb potrebujeme na zakódovanie jedného bodu 4 bity a pre 256 farieb 8 bitov.</napoveda>
+            <riesenie>farbou</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>BMP bitová mapa je najčastejší ... formát. Je to grafický formát, s ktorým MS Windows pracuje najľahšie. V súbore je uložený rastrový obrázok. Nevýhodou je, že aj jednoduchý obrázok zaberá na disku veľký priestor.</napoveda>
+            <riesenie>grafický</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Stretávame sa s rozličnými ... grafických súborov. Každý z nich je navrhnutý na určité špecifické využitie a je výhodný na uchovanie obrázkov istého typu.</napoveda>
+            <riesenie>formátmi</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Najdôležitejšou vlastnosťou ... informácií je rýchlosť a jednoduchosť, s akou sa dá s nimi počítať, ako rýchlo sa dajú spracúvať. Prvá časť digitalizácie je rozdelenie na sieť štvorcov a druhý krok je očíslovanie jednotlivých štvorcov.</napoveda>
+            <riesenie>digitálnych</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Kódovanie je spôsob, ako pomocou ... a núl zapíšeme písmená, čísla, interpunkčné znamienka a „neviditeľné znaky“ ako medzera, enter..</napoveda>
+            <riesenie>jednotiek</riesenie>
         </slovo>
 
     </krizovka>
     <krizovka>
-        <tajnicka>holly</tajnicka>
+        <tajnicka>unicode</tajnicka>
         <slovo>
-            <napoveda>napis holly</napoveda>
-            <riesenie>holly</riesenie>
+            <napoveda>Vektorové editory: CorelDRAW, Adobe ..., Macromedia Flash</napoveda>
+            <riesenie>illustrator</riesenie>
         </slovo>
         <slovo>
-            <napoveda>napis holly</napoveda>
-            <riesenie>holly</riesenie>
+            <napoveda>Mnoho ... okolo nás má podobu zvukov- hudba, spev, signál sirény... v minulosti sa uchovávali na gramofónových platniach.</napoveda>
+            <riesenie>informácií</riesenie>
         </slovo>
         <slovo>
-            <napoveda>napis holly</napoveda>
-            <riesenie>holly</riesenie>
+            <napoveda>Je prevod spojitých (analógových) údajov do binárneho kódu pomocou jednotiek a núl, v ktorom dokáže pracovať počítač.</napoveda>
+            <riesenie>digitalizácia</riesenie>
         </slovo>
         <slovo>
-            <napoveda>napis holly</napoveda>
-            <riesenie>holly</riesenie>
+            <napoveda>Existuje aj dvojková pozičná sústava. Používa ... od nula po jedna- teda 0,1. Pozičné hodnoty sú mocniny čísla 2. Teda sprava doľava 20(čiže 1),21(čiže 2),22(čiže 4),23(čiže 8), ....</napoveda>
+            <riesenie>cifry</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>... sa postupne vyvíjalo z obrázkov (na stenách v jaskyniach). Zobrazované predmety sa postupne menili na niekoľko jednoduchých čiar, ktoré sa čoraz menej podobali svojim skutočným vzorom. Pomocou obrázkového písma sa podarilo zachytiť hovorené slovo.</napoveda>
+            <riesenie>písmo</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>... Inštrukcie, ako sa má hudba zahrať pomocou rôznych hudobných nástrojov. Ktorú notu kedy zahrať, akej dĺžky, na akom nástroji, ako hlasno a podobne. Nie je vhodný pre ľudský hlas. WAV je 1000- krát väčší než MIDI.</napoveda>
+            <riesenie>midi</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Algoritmizácia daného problému- určenie vstupných a výstupných podmienok- zisťovanie podrobností, rozoberanie problémuVytvorenie programu a vhodnej programovej ... . Zapísanie a odladenie programu priamo na PC – zápis programu do PC, odstránenie chýb a testovanie</napoveda>
+            <riesenie>dokumentácii</riesenie>
         </slovo>
 
+    </krizovka>
+    <krizovka>
+        <tajnicka>diagram</tajnicka>
+        <slovo>
+            <napoveda>Program obsahuje inštrukcie pre PC ( ... typov a údajov, využívanie hardwaru, ďalšieho softwaru PC)</napoveda>
+            <riesenie>deklarácia</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>... - postup je zostavený tak, že v každom momente jeho vykonávania je jednoznačne určené aká činnosť má nasledovať alebo či má postup skončiť</napoveda>
+            <riesenie>determinovanosť</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Vetvenie ( ... ) - rozdelenie programu na niekoľko vetiev podľa podmienky</napoveda>
+            <riesenie>alternatíva</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>na opis syntaxi sa používajú 3 metódy : ... , Automaty, Syntaktické diagramy</napoveda>
+            <riesenie>gramatiky</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>... jazyk- používa sa na bežnú komunikáciu, týmto spôsobom sa robí slovný popis algoritmov</napoveda>
+            <riesenie>prirodzený</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Vektorový ... je poskladaný vektorov, z grafických objektov. Obrázok teda môže byť zložený z úsečiek, kružníc, rôznych kriviek,.. o každom objekte si editor pamätá informácie, ktoré objekt dostatočne presne popisujú.</napoveda>
+            <riesenie>obraz</riesenie>
+        </slovo>
+        <slovo>
+            <napoveda>Softvér predinštalovaný na každom Windows počítači - .. Paint</napoveda>
+            <riesenie>ms</riesenie>
+        </slovo>
     </krizovka>
 </krizovky>
