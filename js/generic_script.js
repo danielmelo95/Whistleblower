@@ -1,6 +1,7 @@
 var current_div;
 var currentState;
 var states=[];
+var completed_levels=[];
 //drag and drop source: https://www.w3schools.com/html/html5_draganddrop.asp
 function allowDrop(ev) {
     ev.preventDefault();
@@ -98,9 +99,12 @@ function validate_crossword(){
 
 //      console.log(crossword_childs[8]);
         */
-    for(var j=0; j<crossword_childs.length; j++) {
+    //console.log(crossword_childs.length);
 
-        if (!crossword_childs[j].hasChildNodes()) {
+    for(var j=1; j<crossword_childs.length; j++) {
+        //console.log(crossword_childs[j]);
+        if (!crossword_childs[j].hasChildNodes() && crossword_childs[j].className != "outer_div" && crossword_childs[j].className != "help") {
+            //console.log(crossword_childs[j].className);
             alert("Fill out all spaces");
             return;
         }
@@ -140,10 +144,20 @@ function validate_crossword(){
 
 
     if(checkvar == 0){
+        console.log(document.getElementById("points_div"));
+        var points1 = document.getElementById("points_div").innerHTML;
+        var res = points1.split(" ");
+        console.log(res);
+        completed_levels.push(res[1]);
+        if(completed_levels.length>1)
+        completed_levels.shift();
         alert("Well done, crossword done...");
 
         current_level++;
+        saveToLocalStorage(document.getElementById("body"));
         document.getElementById("crossword").innerHTML = '';
+        //completed_levels.push(points);
+        //console.log(points);
         myFunction(1);    // 1- reset was pressed, do not chceck local storage
    }
     else if(checkvar == 1){
@@ -223,4 +237,79 @@ function enableTouchmovement(){
 function changePoints() {
     points++;
     document.getElementById("points_div").innerHTML = "Points: "+ points;
+}
+
+ function saveHighScore() {
+    document.getElementById("savePopUp").style.display = 'block';
+
+     if(completed_levels.length==0){
+         alert("No levels to save...");
+         document.getElementById("savePopUp").style.display = 'none';
+         return;
+     }
+     else {
+         console.log(current_level);
+         document.getElementById("saveform").innerHTML += '<p>Choose which game to save</p>' +
+             '<select id="popupselect">' +
+             '</select>';
+         for(var i=0; i<completed_levels.length; i++){
+             document.getElementById("popupselect").innerHTML +='' +
+                 '<option id="'+(i+1)+'" value = "'+(current_level-1)+'/' +
+                 ''+completed_levels[i]+'"' +
+                 '> Level: '+(current_level)+'    ' +
+                 'Score: ' + completed_levels[i]+'</option>';
+         }
+       document.getElementById("saveform").innerHTML += '<br><br><br><input type="button" onclick="savetostorage()" value="Save">';
+
+     }
+ }
+ 
+ function savetostorage() {
+     var username = document.getElementById("playerName").value;
+     /*console.log("Username: " + username +'\n'+
+                'Level: ' + current_level+'\n'+
+                'Score : '+ completed_levels[0]);*/
+     var stringToSave = username+'|'+current_level + '|' + completed_levels[0];
+     console.log(stringToSave);
+     document.getElementById("savePopUp").innerHTML =  '<form id="saveform">'+
+         '<br>'+
+         '<input type="text" id="playerName" placeholder="Enter your name">'+
+        '</form>';
+     document.getElementById("savePopUp").style.display = 'none';
+     localStorage.setItem("score" + current_level, stringToSave);
+     showHisghScoretable();
+
+ }
+
+ function showHisghScoretable() {
+    for(var i=0; i<current_level; i++) {
+        var localStorageScore = localStorage.getItem("score"+(i+1));
+        console.log("1:" + localStorageScore);
+    }
+     showHighScoreTable();
+}
+ 
+function showHighScoreTable() {
+    document.getElementById("highscoretable").innerHTML = '<table id="highscore">' +
+        '<tr>' +
+        '<th>Username</th>'+
+        '<th>Level</th>' +
+        '<th>Best score</th>'+
+        '</tr>' +
+        '</table>';
+
+    for(var i=0; i< current_level; i++){
+        var localStorageScore = localStorage.getItem("score"+(i+1));
+        if(localStorageScore==null){
+            return;
+        }
+
+        localStorageScore = localStorageScore.split('|');
+        console.log(localStorageScore);
+        document.getElementById("highscore").innerHTML +='<tr><td>'+localStorageScore[0]+'</td>' +
+            '<td>'+localStorageScore[1]+'</td>' +
+            '<td>'+localStorageScore[2]+'</td></tr>';
+
+
+    }
 }

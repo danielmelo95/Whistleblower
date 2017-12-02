@@ -1,6 +1,5 @@
 function saveToLocalStorage(body) {
     localStorage.setItem("body", nodeToString(body));
-    console.log(localStorage.getItem("body"));
     //createCookie(nodeToString(body));
 }
 

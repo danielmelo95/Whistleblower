@@ -17,15 +17,28 @@
 </head>
 <body background="../imgs/background.png" id="body" onload="showDate()"><!--onload = "xml_parser()">-->
 <div id="date"></div>
-<div id="points_div"> Points: </div>
-<button class="button" type="button" onclick="validate_crossword()" style="vertical-align:middle"><span>Check if you did it right!</span></button>
+<div id="points_div"></div>
 <button class="resetButton" type="button" onclick="resetGame()" style="vertical-align:middle"><span>Reset</span></button>
+<button class="button" type="button" onclick="validate_crossword()" style="vertical-align:middle"><span>Check if you did it right!</span></button>
 <button class="backButton" type="button" onclick="goBackOneStep()" style="vertical-align:middle"><span>Go back one step</span></button>
-
 <div id="crossword"></div>
 <br>
 <br>
 <div id="letters_div">
 </div>
+<br>
+<div id="savePopUp">
+    <form id="saveform">
+        <br>
+        <input type="text" id="playerName" placeholder="Enter your name">
+    </form>
+
+</div>
+
+
+<footer>
+    <button type="button" onclick="saveHighScore()" id="saveButton"><span>Save score!</span></button>
+    <div id="highscoretable"></div>
+</footer>
 </body>
 </html>

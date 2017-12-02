@@ -18,20 +18,23 @@ xhttp.open("GET", "../xml/krizovka.xml", true);
 xhttp.send();
 
 function myFunction(control) {
+    console.log(completed_levels);
     if (control == 0) {
         var chceck = checkLocalStorage();
         if(chceck != null){
             console.log("AAAA");
             states = [];
             document.getElementById("body").innerHTML = chceck;
+            showHighScoreTable();
         }
         else{
             control= 1;
         }
     }
     if (control == 1) {
+        showHighScoreTable();
         points=0;
-        localStorage.clear();
+        //localStorage.clear();
         console.log("AAABBB");
         states = [];
         document.getElementById("points_div").innerHTML = 'Points: ';
@@ -78,7 +81,8 @@ function myFunction(control) {
                     //'></div>';
                 }
                 if (j == sol1.length - 1) {
-                    demoHTML.innerHTML += curent_crosswrord.getElementsByTagName("napoveda")[i].childNodes[0].nodeValue;
+                    demoHTML.innerHTML += '<div class = "help"> '+
+                        curent_crosswrord.getElementsByTagName("napoveda")[i].childNodes[0].nodeValue+'</div>';
                 }
             }
             found_match = 0;
@@ -90,7 +94,7 @@ function myFunction(control) {
 
             drawLetters(arrayOfLetters[k], k);
         }
-        document.getElementById("points_div").innerHTML += points
+        document.getElementById("points_div").innerHTML += points;
     }
 }
 function addToArray(a) {
